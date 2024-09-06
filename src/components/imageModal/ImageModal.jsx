@@ -12,6 +12,7 @@ const ImageModal = ({ image, onClose }) => {
       onRequestClose={onClose}
       className={css.modal}
       overlayClassName={css.overlay}
+      shouldCloseOnOverlayClick={true} 
     >
       <div className={css.content}>
         <img src={urls.regular} alt={alt_description} className={css.img} />

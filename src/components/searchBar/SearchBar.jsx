@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import { FaSearch } from "react-icons/fa";
-import css from './SearchBar.module.css'
+import css from './SearchBar.module.css';
+import toast from 'react-hot-toast';
 
 const SearchBar = ({onSubmit}) => { 
     const [input, setInput] = useState('');
     const handleSubmit = (e) => {
-        e.preventDefault();
+      e.preventDefault();
+      if (!input.trim()) {
+        toast.error('Please enter a search term.');
+        return;
+      }
         onSubmit(input.trim());
         setInput('');
     };

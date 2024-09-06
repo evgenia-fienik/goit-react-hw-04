@@ -3,7 +3,7 @@ import SearchBar from './searchBar/SearchBar';
 import ImageGallery from './imageGallery/ImageGallery';
 import Loader from './loader/Loader';
 import ErrorMessage from './errorMessage/ErrorMessage';
-import toaste, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import LoadMoreBtn from './loadMoreBtn/LoadMoreBtn';
 import ImageModal from './imageModal/ImageModal';
 import { fetchImagesFromAPI } from './services/fetchImages';
